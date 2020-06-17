@@ -1,7 +1,7 @@
  <?php
     $servername = "localhost";
     $username = "root";
-    $password = "";
+    $password = "dzsq5pKD";
     $dbname = "sacco_monitoring_tool";
 
     $conn = new mysqli($servername, $username, $password, $dbname);

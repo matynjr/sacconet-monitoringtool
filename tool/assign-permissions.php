@@ -62,99 +62,34 @@ include_once('php_modules/includes/session.php'); ?>
 
 
                     <div class="row">
-
                         <div class="col-md-6 ">
                             <div class="x_panel">
                                 <div class="x_title">
-                                    <h2>User Roles</small></h2>
-                                    <ul class="nav navbar-right panel_toolbox">
+                                    <h2Assign Permissions</h2> <ul class="nav navbar-right panel_toolbox">
                                         <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                                         </li>
-                                    </ul>
-                                    <div class="clearfix"></div>
-                                </div>
-                                <div class="x_content">
-                                    <br />
-                                    <div class="row">
-                                        <div class="col-sm-12">
-                                            <div class="card-box table-responsive">
-                                                <table id="datatable-buttons" class="table table-striped table-bordered" style="width:100%">
-                                                    <thead>
-                                                        <tr>
-                                                            <th>#</th>
-                                                            <th>Role</th>
-                                                            <th>Actions</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody id="results"></tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 ">
-                            <div class="x_panel">
-                                <div class="x_title">
-                                    <h2>Administrator <small>configure permissions for the Administrator</small></h2>
-                                    <ul class="nav navbar-right panel_toolbox">
-                                        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                                        </li>
-
-
-                                    </ul>
-                                    <div class="clearfix"></div>
+                                        </ul>
+                                        <div class="clearfix"></div>
                                 </div>
                                 <div class="x_content">
                                     <br />
                                     <form class="form-horizontal form-label-left">
-
-
-                                        <!-- <div class="form-group row">
-                                            <label class="col-md-3 col-sm-3  control-label">Checkboxes and radios
-
-                                            </label>
-
-                                            <div class="col-md-9 col-sm-9 ">
-                                                <div class="checkbox">
-                                                    <label>
-                                                        <input type="checkbox" class="flat" checked="checked"> Checked
-                                                    </label>
-                                                </div>
-                                                <div class="checkbox">
-                                                    <label>
-                                                        <input type="checkbox" class="flat"> Unchecked
-                                                    </label>
-                                                </div>
+                                        <div class="row">
+                                            <label class="control-label col-md-3 col-sm-3 ">Available permissions</label>
+                                            <div class="col-md-9 col-sm-9" id="available">
 
                                             </div>
-                                        </div> -->
-                                        <div class="form-group row">
-                                            <label class="control-label col-md-3 col-sm-3 ">Switch</label>
-                                            <div class="col-md-9 col-sm-9 ">
-                                                <div class="">
-                                                    <label>
-                                                        <input type="checkbox" class="js-switch" checked /> can add users
-                                                    </label>
-                                                </div>
-                                                <div class="">
-                                                    <label>
-                                                        <input type="checkbox" class="js-switch" />can view user
-                                                    </label>
-                                                </div>
+                                        </div>
+                                        <div class="row">
+                                            <label class="control-label col-md-3 col-sm-3 ">Assigned permissions</label>
+                                            <div class="col-md-9 col-sm-9" id="assigned">
 
                                             </div>
                                         </div>
 
-
-                                        <div class="ln_solid"></div>
                                         <div class="form-group">
                                             <div class="col-md-9 col-sm-9  offset-md-3">
-                                                <button type="button" class="btn btn-primary">Cancel</button>
-                                                <button type="reset" class="btn btn-primary">Reset</button>
-                                                <button type="submit" class="btn btn-success">Save changes</button>
+                                                <button type="submit" class="btn btn-success">Done</button>
                                             </div>
                                         </div>
 
@@ -177,10 +112,15 @@ include_once('php_modules/includes/session.php'); ?>
             <!-- /footer content -->
         </div>
     </div>
+    <script>
+        function sayHello(val) {
+            alert(val);
+        }
+    </script>
 
     <!-- jQuery -->
     <script src="jquery/jquery.js"></script>
-    <script src="js_modules/list_user_roles.js"></script>
+    <script src="js_modules/get_permissions.js"></script>
     <!-- Bootstrap -->
     <script src="../vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <!-- FastClick -->

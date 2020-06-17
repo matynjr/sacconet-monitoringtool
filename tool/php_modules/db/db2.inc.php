@@ -4,7 +4,7 @@
 
 $servername = "localhost";
 $username = "root";
-$pass = "";
+$pass = "dzsq5pKD";
 $db_name = "uccfs";
 $conn = mysqli_connect($servername, $username, $pass, $db_name);
 if (!$conn) {
